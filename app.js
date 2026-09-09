@@ -1,4 +1,4 @@
-const API_URL='https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec';
+const API_URL='https://script.google.com/macros/s/AKfycbxxxxxxxxxxxxxxxx/exec';
 const $=id=>document.getElementById(id);
 const state={customer:null};
 function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
