@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Praksh Collection Rewards</title><link rel="stylesheet" href="style.css">
+    </head>
+    <body><header>
+        <b>PRAKSH COLLECTION</b>
+        <button id="theme">
+            ☾</button>
+    </header>
+        <main><section class="hero"><small>LOYALTY PROGRAM</small>
+            <h1>Shop more. Earn more.</h1><p>Submit bills, collect points and redeem rewards.</p>
+            <strong>₹999 = 1 Point</strong></section><section id="customer" class="view active">
+                <div class="card">
+                    <h2>Customer details</h2>
+                    <p>Enter your details to view rewards.</p>
+                    <form id="customerForm">
+                        <input id="name" placeholder="Customer name" required>
+                        <input id="phone" inputmode="numeric" maxlength="10" placeholder="Mobile number" required>
+                        <button>View My Rewards</button>
+                    </form><p id="customerMsg"></p></div><div id="dashboard" class="hidden">
+                        <div class="stats"><div>Available<strong id="available">0</strong>
+                        </div><div>Earned<strong id="earned">0</strong></div>
+                        <div>Redeemed<strong id="redeemed">0</strong></div>
+                        <div>Pending<strong id="pending">0</strong></div></div>
+                        <div class="columns"><div class="card">
+                            <h2>Submit a bill</h2><p>Points are added only after the owner approves your bill.</p>
+                            <form id="billForm"><input id="bill" placeholder="Bill number" required>
+                                <input id="amount" type="number" min="999" placeholder="Bill amount" required>
+                                <input id="date" type="date" required>
+                                <input id="photo" type="file" accept="image/*" required>
+                                <button>Submit Bill</button></form><p id="billMsg"></p>
+                            </div><div class="card"><h2>Redeem reward</h2>
+                                <p>₹200 reward requires 5 approved points.</p>
+                                <button id="redeem">Redeem Reward</button>
+                                <p id="redeemMsg"></p></div></div><div class="card">
+                                    <h2>Points history</h2><div class="table"><table>
+                                        <thead><tr><th>Date</th><th>Bill</th>
+                                            <th>Amount</th><th>Points</th><th>Status</th>
+                                            <th>Reason</th></tr></thead><tbody id="ledger"></tbody></table>
+                                        </div></div></div></section></main><footer>© Praksh Collection Rewards</footer>
+                                        <script src="app.js"></script>
+                                    </body>
+                                    </html>
